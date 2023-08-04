@@ -12,13 +12,13 @@ function jugarPresupuesto() {
   
         const precio = parseFloat(prompt("Ingrese el precio del producto:"));
         if (isNaN(precio) || precio <= 0) {
-          alert("Por favor ingrese un precio válido.");
+          alert("Por favor ingrese un precio valido.");
           return;
         }
   
         const cantidad = parseInt(prompt("Ingrese la cantidad del producto:"));
         if (isNaN(cantidad) || cantidad <= 0) {
-          alert("Por favor ingrese una cantidad válida.");
+          alert("Por favor ingrese una cantidad valida.");
           return;
         }
   
@@ -29,11 +29,11 @@ function jugarPresupuesto() {
         };
   
         this.productos.push(producto);
-        alert("Producto agregado al presupuesto.");
+        alert("Tu producto se agrego correctamente!");
       },
       mostrarPresupuesto: function() {
         if (this.productos.length === 0) {
-          alert("El presupuesto está vacío. Agregue productos primero.");
+          alert("No se agregaron productos aun, agregue algun producto para mostrar el presupuesto");
           return;
         }
   
